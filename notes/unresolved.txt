@@ -1,0 +1,41 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkTrivShowAns | psh2htrivia.so
+RankFunc | psh2htrivia.so
+AppendLangExt(char (&) [255], LocaleMasks) | psh2htrivia.so
+QueFlush(bool) | psh2htrivia.so
+TriviaClass::GetQuesData(int, int) | psh2htrivia.so
+TriviaClass::GetRandomAns(unsigned char) | psh2htrivia.so
+TriviaClass::GetRandomCat() | psh2htrivia.so
+TriviaClass::TriviaClass(xml_gamerandom::TrivPICRAND_record*, char*, unsigned char, unsigned char, unsigned char) | psh2htrivia.so
+TriviaClass::~TriviaClass() | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AdjustTime(int, long) | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::copy(abstract_record const*) | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AddChild(abstract_xml_record*, char const*, unsigned int) | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::NewChild(char*) | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GameSettingsTriviaRandom_record() | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::~GameSettingsTriviaRandom_record() | psh2htrivia.so
+abstract_xml_record::AdjustTimeFields(int, long) | psh2htrivia.so
+Bitmap::CopyFromScreen(int, int, bool) | psh2htrivia.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | psh2htrivia.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | psh2htrivia.so
+Settings::Init() | psh2htrivia.so
+Settings::Load() | psh2htrivia.so
+Settings::Cleanup() | psh2htrivia.so
+Settings::Restore(abstract_xml_record const*) | psh2htrivia.so
+Settings::Settings(char const*, unsigned int) | psh2htrivia.so
+Settings::~Settings() | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildCount() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GetChildren() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::cTag() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::eTag() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::clone() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::equal(abstract_record const*) const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::Metadata() const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildName(int) const | psh2htrivia.so
+xml_gamerandom::GameSettingsTriviaRandom_record::not_equal(abstract_record const*) const | psh2htrivia.so
+Settings::Key(unsigned int, bool) const | psh2htrivia.so
+typeinfo for Settings | psh2htrivia.so
+typeinfo for xml_gamerandom::GameSettingsTriviaRandom_record | psh2htrivia.so
